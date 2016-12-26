@@ -1,7 +1,4 @@
-import { combineReducers } from 'redux';
-import { routerReducer as routing } from 'react-router-redux';
-
-const appReducer = (state = {}, action) => {
+const reducer = (state = {}, action) => {
   switch (action.type) {
     case 'SET_USERNAME':
       return {
@@ -24,7 +21,4 @@ const appReducer = (state = {}, action) => {
   }
 }
 
-export default combineReducers({
-  appReducer: appReducer,
-  routing
-});
+export default reducer;
